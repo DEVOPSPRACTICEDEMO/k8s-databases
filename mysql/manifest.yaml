@@ -4,9 +4,9 @@ metadata:
   name: mysql
   namespace: roboshop
   labels:
-  component: mysql
-  project: roboshop
-  tier: database
+    component: mysql
+    project: roboshop
+    tier: database
 type: Opaque
 data:   
   MYSQL_ROOT_PASSWORD: "Um9ib3Nob3BAMQ=="
@@ -78,7 +78,7 @@ spec:
       - name: mysql
         image: surajpadhi/mysql:v1
         envFrom:
-        -secretRef:
+        - secretRef:
           name: mysql
         volumeMounts:
         - name: mysql-data
