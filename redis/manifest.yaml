@@ -57,7 +57,7 @@ spec:
   template:
     metadata:
       labels:
-        component: mongodb
+        component: redis
         project: roboshop
         tier: database
     spec:
